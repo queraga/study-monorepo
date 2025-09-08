@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 24px;
+  justify-content: center;
+  align-items: start;
+  margin: 100px auto;
+  max-width: 800px;
+}
+.main {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.thumb {
+  width: 160px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: 2px solid transparent;
+  outline-color: grey;
+  transition: transform 0.2s ease, outline-color 0.2s ease;
+}
+
+.thumb:active {
+  transform: scale(0.95);
+}

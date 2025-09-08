@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+
+  padding: 8px;
+}
+
+button {
+  border-radius: 12px;
+  margin: 5px 6px;
+  border: none;
+  padding: 6px;
+  border: 1px solid grey;
+}
+
+button:hover {
+  background-color: aqua;
+  color: grey;
+}
+
+.textCss {
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  margin-top: 20px;
+  border: 2px solid grey;
+  height: 50vh;
+}

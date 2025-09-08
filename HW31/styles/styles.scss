@@ -1,0 +1,28 @@
+@use "./variables";
+@use "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.adaptiveContainer {
+  border: variables.$selectedBorder;
+  width: variables.$windowWidthDefault;
+
+  @media (max-width: 768px) {
+    width: variables.$windowWidthTablet;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.button {
+  @include mixins.buttonStyles(aqua, rgb(29, 29, 26));
+}

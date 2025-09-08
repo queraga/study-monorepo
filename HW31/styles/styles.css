@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.adaptiveContainer {
+  border: 12px solid green;
+  width: 960px;
+}
+@media (max-width: 768px) {
+  .adaptiveContainer {
+    width: 768px;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.button {
+  background-color: aqua;
+  color: rgb(29, 29, 26);
+}/*# sourceMappingURL=styles.css.map */
